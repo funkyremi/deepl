@@ -44,7 +44,7 @@ translate({
 
 ## Example response
 
-```
+```json
 {
     "translations": [
         {
