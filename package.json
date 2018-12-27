@@ -1,0 +1,29 @@
+{
+  "name": "deepl",
+  "version": "1.0.0",
+  "description": "Deepl API wrapper for node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funkyremi/deepl.git"
+  },
+  "keywords": [
+    "deepl",
+    "translator",
+    "api",
+    "node",
+    "translate"
+  ],
+  "author": "Rémi Testa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/funkyremi/deepl/issues"
+  },
+  "homepage": "https://github.com/funkyremi/deepl#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
