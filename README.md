@@ -35,7 +35,7 @@ translate({
     // All optional parameters available in the official documentation can be defined here as well.
   })
   .then(result => {
-      console.log(result);
+      console.log(result.data);
   })
   .catch(error => {
       console.error(error)
