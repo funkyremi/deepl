@@ -1,6 +1,6 @@
 {
   "name": "deepl",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Deepl API wrapper for node",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/funkyremi/deepl#readme",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "querystring": "^0.2.0"
   }
 }
