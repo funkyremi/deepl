@@ -6,11 +6,13 @@ import querystring from 'querystring';
 export = translate;
 
 async function translate(parameters: translate.Parameters): Promise<AxiosResponse<translate.Response>> {
-    return axios.post('https://api.deepl.com/v2/translate', querystring.stringify(parameters));
+    const sub_domain = parameters.free_api ? 'api-free' : 'api';
+    return axios.post(`https://${sub_domain}.deepl.com/v2/translate`, querystring.stringify(parameters));
 }
 
 namespace translate {
     export interface Parameters {
+        free_api: Boolean;
         auth_key: string;
         text: string;
         source_lang?: 'DE' | 'EN' | 'FR' | 'IT' | 'JA' | 'ES' | 'NL' | 'PL' | 'PT' | 'RU' | 'ZH';

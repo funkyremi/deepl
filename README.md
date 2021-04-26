@@ -41,6 +41,17 @@ translate({
   });
 ```
 
+### free api endpoint
+
+``` js
+translate({
+    free_api: true,
+    text: 'I am a text',
+    target_lang: 'FR',
+    auth_key: 'authkey',
+  })
+```
+
 ## Example response
 
 ```json
