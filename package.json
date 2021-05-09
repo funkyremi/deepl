@@ -1,6 +1,6 @@
 {
   "name": "deepl",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Deepl API wrapper for node",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
