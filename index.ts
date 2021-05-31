@@ -15,7 +15,7 @@ namespace translate {
         free_api: Boolean;
         auth_key: string;
         text: string;
-        source_lang?: 'DE' | 'EN' | 'FR' | 'IT' | 'JA' | 'ES' | 'NL' | 'PL' | 'PT' | 'RU' | 'ZH';
+        source_lang?: 'BG' | 'CS' | 'DA' | 'DE' | 'EL' | 'EN' | 'ES' | 'ET' | 'FI' | 'FR' | 'HU' | 'IT' | 'JA' | 'LT' | 'LV' | 'NL' | 'PL' | 'PT' | 'RO' | 'RU' | 'SK' | 'SL' | 'SV' | 'ZH';
         target_lang: '';
         split_sentences?: '0' | '1' | 'nonewlines';
         preserve_formatting?: '0' | '1';
