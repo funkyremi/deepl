@@ -1,6 +1,6 @@
-import axios, { AxiosResponse } from "axios";
+import axios, { AxiosResponse } from 'axios';
 // @ts-ignore
-import querystring from "querystring";
+import querystring from 'querystring';
 
 // ---- CommonJS export using namespace
 export = translate;
@@ -8,7 +8,7 @@ export = translate;
 async function translate(
   parameters: translate.Parameters
 ): Promise<AxiosResponse<translate.Response>> {
-  const sub_domain = parameters.free_api ? "api-free" : "api";
+  const sub_domain = parameters.free_api ? 'api-free' : 'api';
   return axios.post(
     `https://${sub_domain}.deepl.com/v2/translate`,
     querystring.stringify(parameters)
@@ -17,30 +17,30 @@ async function translate(
 
 namespace translate {
   export type DeeplLanguages =
-    | "BG"
-    | "CS"
-    | "DA"
-    | "DE"
-    | "EL"
-    | "EN"
-    | "ES"
-    | "ET"
-    | "FI"
-    | "FR"
-    | "HU"
-    | "IT"
-    | "JA"
-    | "LT"
-    | "LV"
-    | "NL"
-    | "PL"
-    | "PT"
-    | "RO"
-    | "RU"
-    | "SK"
-    | "SL"
-    | "SV"
-    | "ZH";
+    | 'BG'
+    | 'CS'
+    | 'DA'
+    | 'DE'
+    | 'EL'
+    | 'EN'
+    | 'ES'
+    | 'ET'
+    | 'FI'
+    | 'FR'
+    | 'HU'
+    | 'IT'
+    | 'JA'
+    | 'LT'
+    | 'LV'
+    | 'NL'
+    | 'PL'
+    | 'PT'
+    | 'RO'
+    | 'RU'
+    | 'SK'
+    | 'SL'
+    | 'SV'
+    | 'ZH';
 
   export interface Parameters {
     free_api: Boolean;
@@ -48,9 +48,9 @@ namespace translate {
     text: string;
     source_lang?: DeeplLanguages;
     target_lang: DeeplLanguages;
-    split_sentences?: "0" | "1" | "nonewlines";
-    preserve_formatting?: "0" | "1";
-    formality?: "default" | "more" | "less";
+    split_sentences?: '0' | '1' | 'nonewlines';
+    preserve_formatting?: '0' | '1';
+    formality?: 'default' | 'more' | 'less';
     tag_handling?: string[];
     non_splitting_tags?: string[];
     outline_detection?: string;
