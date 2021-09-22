@@ -41,7 +41,7 @@ translate({
   });
 ```
 
-### free api endpoint
+### Free API endpoint
 
 ``` js
 translate({
