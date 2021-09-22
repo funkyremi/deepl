@@ -20,7 +20,7 @@ Get an account and an API key here: https://www.deepl.com/pro.html
 
 ## Supported languages
 
-`"BG" "CS" "DA" "DE" "EL" "EN" "ES" "ET" "FI" "FR" "HU" "IT" "JA" "LT" "LV" "NL" "PL" "PT" "RO" "RU" "SK" "SL" "SV" "ZH"`
+`"BG" "CS" "DA" "DE" "EL" "EN-GB" "EN-US" "EN" "ES" "ET" "FI" "FR" "HU" "IT" "JA" "LT" "LV" "NL" "PL" "PT-PT" "PT-BR" "PT" "RO" "RU" "SK" "SL" "SV" "ZH"`
 
 ## Usage
 
