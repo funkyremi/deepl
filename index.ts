@@ -9,9 +9,15 @@ async function translate(
   parameters: translate.Parameters
 ): Promise<AxiosResponse<translate.Response>> {
   const sub_domain = parameters.free_api ? 'api-free' : 'api';
+
+  const queryParameters: any = Object.assign({}, parameters)
+  if (parameters.ignore_tags) { // API requires string
+    queryParameters.ignore_tags = parameters.ignore_tags.join(',')
+  }
+
   return axios.post(
     `https://${sub_domain}.deepl.com/v2/translate`,
-    querystring.stringify(parameters)
+    querystring.stringify(queryParameters)
   );
 }
 
